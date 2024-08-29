@@ -469,28 +469,34 @@
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var swiper = new Swiper(".swiper-container", {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
+        document.addEventListener("DOMContentLoaded", function () {
+          var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
             },
-            1024: {
-              slidesPerView: 3,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             },
-          },
+            breakpoints: {
+              1200: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+            },
+          });
         });
-      });
     </script>
   </body>
 </html>
