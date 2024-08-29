@@ -292,7 +292,7 @@
   background-color: transparent !important;
   color: black !important;
   border-radius: 50% !important;
-  display: flex !important;
+  display: none !important;
   align-items: center !important;
   justify-content: center !important;
   z-index: 10 !important;
@@ -359,7 +359,7 @@
   color: white;
 }
 .disabled {
-  color: rgba(255, 245, 246, 0.2);
+  color: rgba(255, 245, 246, 0.4);
 }
 .logo-contact {
   display: flex;

@@ -468,35 +468,61 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-              1200: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
+      const swiper1 = new Swiper(".swiper-container", {
         slidesPerView: 1,
-      },
-            },
-          });
-        });
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper-container:nth-of-type(2)", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 1,
+          },
+        },
+      });
     </script>
   </body>
 </html>
