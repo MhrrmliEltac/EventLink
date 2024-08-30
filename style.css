@@ -528,9 +528,11 @@
   }
 
   .nav-list-footer {
-    width: 50%;
+    width: 85%;
   }
-
+  .swiper-wrapper {
+    overflow: hidden;
+  }
   .like {
     left: 67%;
   }
